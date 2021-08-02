@@ -1,0 +1,162 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<title>Aguzrybudy.com | Datetimepicker Bootsrap</title>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" name="viewport"/>
+<meta content="Aguzrybudy" name="author"/>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/moment.js"></script>
+<script src="js/bootstrap-datetimepicker.min.js"></script>
+<style type="text/css">
+  .wrapper{
+    padding:50px;
+  }
+</style>
+<script type="text/javascript">
+  $(function () {
+    $('#datetimepicker1').datetimepicker();
+  });
+  $(function () {
+    $('#datetimepicker2').datetimepicker({
+        format: 'YYYY-MM-DD h:m:s A',
+      });
+  });
+  $(function () {
+    $('#datetimepicker3').datetimepicker({
+        format: 'LT'
+      });
+  });
+  $(function () {
+    $('#datetimepicker4').datetimepicker();
+  });
+  $(function () {
+    $('#datetimepicker5').datetimepicker({
+      icons: {
+              time: "fa fa-clock-o",
+              date: "fa fa-calendar",
+              up: "fa fa-arrow-up",
+              down: "fa fa-arrow-down"
+            }
+        });
+  });
+  $(function () {
+    $('#datetimepicker6').datetimepicker({
+      viewMode: 'years'
+    });
+  });
+  $(function () {
+    $('#datetimepicker7').datetimepicker({
+      viewMode: 'years',
+      format: 'MM/YYYY'
+    });
+  });
+$(function () {
+  $('#datetimepicker8').datetimepicker({
+    defaultDate: "11/1/2016",
+    disabledDates: [
+                  moment("12/25/2016"),
+                  new Date(2016, 11 - 1, 21),
+                  "11/22/2016 00:53"
+                ]
+            });
+  });
+
+</script>
+</head>
+<body>
+<div class="wrapper">
+  <div class="row">
+    <div class="col-md-12">
+     <div class="col-md-3"></div>
+      <div class="col-md-6">
+        <form action="" method="POST" class="form-horizontal" role="form">
+            <div class="form-group">
+              <legend>Plugins Datetimepicker</legend>
+            </div>
+            <div class="form-group">
+              <label for="datetimepicker">Datetimepicker Default</label>
+              <div class='input-group date' id='datetimepicker1'>
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>         
+            <div class="form-group">
+              <label for="datetimepicker">Datetimepicker With Format YYYY-MM-DD h:m:s A</label>
+              <div class='input-group date' id='datetimepicker2'>
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>     
+            <div class="form-group">
+              <label for="datetimepicker">Datetimepicker Format Time</label>
+              <div class='input-group date' id='datetimepicker3'>
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>  
+            <div class="form-group">
+              <label for="datetimepicker">Datetimepicker No Icon</label>
+              <div class='input-group date' >
+                    <input type='text' class="form-control" id='datetimepicker4' />
+                    <span class="input-group-addon">
+                    </span>
+                </div>
+            </div>       
+            <div class="form-group">
+              <label for="datetimepicker">Datetimepicker Custom Icon</label>
+              <div class='input-group date' id='datetimepicker5'>
+                    <input type='text' class="form-control"  />
+                    <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div> 
+            <div class="form-group">
+              <label for="datetimepicker">Datetimepicker View Mode Year</label>
+              <div class='input-group date' id='datetimepicker6'>
+                    <input type='text' class="form-control"  />
+                    <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>   
+            <div class="form-group">
+              <label for="datetimepicker">Datetimepicker View Mode Month</label>
+              <div class='input-group date' id='datetimepicker7'>
+                    <input type='text' class="form-control"  />
+                    <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>       
+            <div class="form-group">
+              <label for="datetimepicker">Datetimepicker Disable Date</label>
+              <div class='input-group date' id='datetimepicker8'>
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>        
+            <div class="form-group">
+              <button type="submit" class="btn btn-info">Submit</button>
+              <button type="submit" class="btn btn-danger">Cancel</button>
+            </div>
+        </form>
+      </div>
+      <div class="col-md-3"></div>
+    </div>
+  </div>
+</div>      
+</body>
+</html>
